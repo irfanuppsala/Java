@@ -1,4 +1,3 @@
-import java.io.*;
 import java.util.Scanner;
 import java.lang.String;
 
@@ -10,7 +9,7 @@ public class Variabler {
         //new Variabler().misc();
     }
 
-    public void misc()
+    public void miscellaneous()
     {
         String name;
         System.out.println("Vad heter du?");
