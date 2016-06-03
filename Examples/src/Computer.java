@@ -14,7 +14,8 @@ public class Computer
 		com.setHardDrive("1TB");
 		System.out.println("Brand på datoran är " + com.Brand());
 		
-		
+		int summan = calculate(5,7);
+		System.out.println("Summan av talen är " + summan);		
 	}
 	private String brand; //Variabel som endast kan nås i klassen.
 	private String processor;
@@ -77,5 +78,11 @@ public class Computer
 		System.out.println("RAM: " + ram);
 		System.out.println("Hard Drive: " + hardDrive);
 		System.out.println("");
+	}
+	
+    private static int calculate(int tal1, int tal2)
+	{
+		  int summa = tal1 + tal2;
+		  return summa;
 	}
 }
