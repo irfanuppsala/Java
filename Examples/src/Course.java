@@ -1,14 +1,14 @@
 import java.io.*;
 import java.lang.String;
 
-public class Course extends Book {
+public class Course extends Books {
     
 	public static void main(String args[])
     {
         //Skapar objekt
-    	Book fairytaleBook = new Book();
-    	Book programmingBook = new Book();
-    	Book historyBook = new Book();
+    	Books fairytaleBook = new Books();
+    	Books programmingBook = new Books();
+    	Books historyBook = new Books();
     	
     	historyBook.setTitle("C++ Direkt");
     	historyBook.setAuthor("Jan Skansholm");

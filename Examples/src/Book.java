@@ -1,48 +1,55 @@
 import java.io.*;
-import java.lang.String;
 
-public class Book //Här talar vi om att det är en klass vi skapar och att den ska heta book.
+public class Book
 {
-    private String title; //Variabel som endast kan nås i klassen.
-    private String author;
-    public int price;
-    //egenskaper (properties). Används för att förhindra åtkomst till privata variabler.
-
-	public void skrivUt()
+	public String title = "N N";
+	public String author = "N N";
+	public int price = 0;
+	public Book()
+	{}
+	
+	//Construktor
+	public Book(String title, String author, int price)
 	{
-		System.out.println("Titel " + title);
-		System.out.println("F�rfattare " + author);
-		System.out.println("Pris " + price);
-		System.out.println("");
+		setTitle(title);
+		setAuthor(author);
+		setPrice(price);
 	}
 	
-    //Getter for "title"
-    public String Title() {
-        return title;
-    }
-
-    // Setter for "title"
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    //Getter for "author"
-    public String Author() {
-        return author;
-    }
-
-    // Setter for "author"
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
-    //Getter for "price"
-    public int Price() {
-        return price;
-    }
-
-    // Setter for "price"
-    public void setPrice(int price) {
-        this.price = price;
-    }
-}
+	//Setters
+	public void setTitle(String title)
+	{
+		this.title = title;
+	}
+	public void setAuthor(String author)
+	{
+		this.author = author;
+	}
+	public void setPrice(int price)
+	{
+		this.price = price;
+	}
+	
+	//Getters
+	public int getPrice()
+	{
+		return price;
+	}
+	public String getTitle()
+	{
+		return title;
+	}
+	public String getAuthor()
+	{
+		return author;
+	}
+	
+	//Utskriftsmetod
+	public void skrivUt()
+	{
+		System.out.println("");
+		System.out.println("Titel: " + title);
+		System.out.println("F�rfattare: " + author);
+		System.out.println("Pris: " + price);
+	}
+}//End superclass
