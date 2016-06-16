@@ -1,5 +1,3 @@
-import java.io.Console;
-
 public class Computer 
 {
 	public static void main(String[] args){

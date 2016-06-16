@@ -1,5 +1,3 @@
-import java.io.*;
-
 public class Book
 {
 	public String title = "N N";

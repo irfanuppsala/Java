@@ -1,4 +1,3 @@
-import java.io.*;
 import java.lang.String;
 
 public class Books //Här talar vi om att det är en klass vi skapar och att den ska heta book.

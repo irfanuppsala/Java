@@ -1,4 +1,3 @@
-import java.io.*;
 import java.lang.String;
 
 public class Course extends Books {
@@ -6,8 +5,8 @@ public class Course extends Books {
 	public static void main(String args[])
     {
         //Skapar objekt
-    	Books fairytaleBook = new Books();
-    	Books programmingBook = new Books();
+    	//Books fairytaleBook = new Books();
+    	//Books programmingBook = new Books();
     	Books historyBook = new Books();
     	
     	historyBook.setTitle("C++ Direkt");

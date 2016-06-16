@@ -3,7 +3,9 @@ import java.lang.String;
 
 public class Variabler {
 
-    public static void main(String[] args) {
+    private Scanner sub2;
+
+	public static void main(String[] args) {
 
         new Variabler().atm();
         //new Variabler().misc();
@@ -19,13 +21,15 @@ public class Variabler {
 
         System.out.println("\n");
         int tal = 0;
-        Scanner sc4 = new Scanner(System.in);
+		Scanner sc4 = new Scanner(System.in);
 
         while (tal != 10)  {
             System.out.println("Skriv ett tal");
             tal = sc4.nextInt();
         }
         System.out.println("Rätt talet var " + tal);
+        sc2.close();
+        sc4.close();
     }
 
     public void atm()
@@ -60,7 +64,7 @@ public class Variabler {
                 {
                     System.out.println("Tyvärr, Du kan inte ta ut mer än ditt konto");
                     System.out.println("Hur mycket vill du ta ut?");
-                    Scanner sub2 = new Scanner(System.in);
+                    sub2 = new Scanner(System.in);
                     uttag = sub2.nextInt();
                     if(uttag<konto)
                     {
@@ -86,5 +90,6 @@ public class Variabler {
                 System.out.println("");
                 break;
         }
+        sc3.close();
     }
 }
