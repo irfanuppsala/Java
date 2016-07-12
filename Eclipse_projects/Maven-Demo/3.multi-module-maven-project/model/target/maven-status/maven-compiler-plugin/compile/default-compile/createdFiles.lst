@@ -1,0 +1,12 @@
+com\in28minutes\example\layering\model\api\client\CollateralType.class
+com\in28minutes\example\layering\model\impl\client\AmountImpl.class
+com\in28minutes\example\layering\model\impl\client\ClientImpl.class
+com\in28minutes\example\layering\model\impl\client\CollateralImpl.class
+com\in28minutes\example\layering\model\api\client\Collateral.class
+com\in28minutes\example\layering\model\api\client\Amount.class
+com\in28minutes\example\layering\model\api\client\Client.class
+com\in28minutes\example\layering\model\api\client\Currency.class
+com\in28minutes\example\layering\model\api\client\ClientType.class
+com\in28minutes\example\layering\model\impl\client\ProductImpl.class
+com\in28minutes\example\layering\model\api\client\ProductType.class
+com\in28minutes\example\layering\model\api\client\Product.class

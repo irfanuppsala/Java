@@ -1,0 +1,4 @@
+com\in28minutes\example\layering\business\client\ClientBOStubTest.class
+com\in28minutes\example\layering\business\client\ClientBOMockitoTest.class
+com\in28minutes\example\layering\data\stub\ProductDOStub.class
+com\in28minutes\example\layering\data\stub\ClientDOStub.class

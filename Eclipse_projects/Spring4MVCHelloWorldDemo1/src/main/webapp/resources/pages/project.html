@@ -1,0 +1,31 @@
+<div class="row"> <!-- row 3 -->
+    <div class="col-md-12">
+        <h2><strong># Mina projekts</strong></h2>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead>
+                <tr class="table-header-row">
+                    <th>Projekt</th>
+                    <th>Beskrivning (ladda ner)</th>
+                    <th>Kod (ladda ner)</th>
+                    <th>Beskrivning (visa online)</th>
+                </tr>
+                </thead>
+                <tr  ng-repeat="p in projects">
+                    <td class="success"><a href="{{p.link}}" target="_blank" class="alert-link">{{p.name}}</a></td>
+                    <td class="active"><a href="{{p.download_detail}}" download>Ladda ner info</a></td>
+                    <td class="active"><a href="{{p.code}}" download>Ladda ner kod</a></td>
+                    <td class="active" style="text-align: center;"><a href="{{p.download_detail}}">Visa info</a></td>
+                </tr>
+            </table>
+
+        </div> <!-- row 3 end -->
+
+        <div class="row"> <!-- row 4 -->
+            <div class="col-md-12">
+                <footer class="footer">&copy; Copyright 2016</footer>
+            </div> <!-- div col md 12 -->
+        </div> <!-- row 4 end -->
+    </div>
+
+</div> <!-- row 3 end -->

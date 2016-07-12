@@ -1,0 +1,101 @@
+
+<div class="row"> <!-- row 1 start -->
+
+    <section class="col-md-7">
+        <h2><strong># Om mig</strong></h2>
+        <p style="text-align: justify;">{{about}}</p>
+    </section> <!-- div col md 7 -->
+
+    <aside class="col-md-5 box">
+        <h2><strong># Kontakt information</strong></h2>
+        <ul class="contact-list">
+            <li><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>{{mobile}}<li>
+            <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="{{email}}">{{email}}</a><li>
+            <li><a href="{{linkedin}}" style="text-decoration:none;" target="_blank"><span style="font: 100% Arial,sans-serif; color:#0783B6;"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="25" height="20" alt="Visa {{name}} profil på LinkedIn" style="vertical-align:middle;" border="0">&nbsp;Gå till Irfan Ali profil</span></a><li>
+        </ul>
+    </aside> <!-- div col md 5 -->
+</div> <!-- row 1 end -->
+
+<hr width="100%" style="color:black">
+
+<div class="row"> <!-- row 2 -->
+
+    <div class="col-md-7">
+        <h2><strong># Utbildning och erfarenhet</strong></h2>
+
+        <div class="media" ng-repeat="e in institute">
+            <div class="media-left">
+                {{e.year}}
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading"><strong>{{e.name}}</strong></h4>
+                {{e.specialization}}
+            </div>
+        </div>
+    </div> <!-- div col md 7 -->
+
+    <aside class="col-md-5">
+        <h2><strong># Programmeringsspråk</strong></h2>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="" style="width: 95%;">PHP</div>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="80" style="width: 50%;">.NET</div>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0" style="width:60%;">
+                Java
+            </div>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0" style="width:95%;">HTML</div>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">CSS</div>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
+                JavaScript
+            </div>
+        </div>
+    </aside> <!-- div col md 5 -->
+</div> <!-- row 2 end -->
+
+
+<div class="row"> <!-- row 3 -->
+    <div class="col-md-12">
+        <h2><strong># Mina projekt</strong></h2>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead>
+                <tr class="table-header-row">
+                    <th>Projekt</th>
+                    <th>Beskrivning (ladda ner)</th>
+                    <th>Kod (ladda ner)</th>
+                    <th>Beskrivning (visa online)</th>
+                </tr>
+                </thead>
+                <tr  ng-repeat="p in projects">
+                    <td class="success"><a href="{{p.link}}" target="_blank" class="alert-link">{{p.name}}</a></td>
+                    <td class="active"><a href="{{p.download_detail}}" download>Ladda ner info</a></td>
+                    <td class="active"><a href="{{p.code}}" download>Ladda ner kod</a></td>
+                    <td class="active" style="text-align: center;"><a href="{{p.download_detail}}">Visa info</a></td>
+                </tr>
+            </table>
+
+        </div> <!-- row 3 end -->
+
+        <div class="row"> <!-- row 4 -->
+            <div class="col-md-12">
+                <footer class="footer">&copy; Copyright 2016</footer>
+            </div> <!-- div col md 12 -->
+        </div> <!-- row 4 end -->
+    </div>
+
+</div> <!-- row 3 end -->
